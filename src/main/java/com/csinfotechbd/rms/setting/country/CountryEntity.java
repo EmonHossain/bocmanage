@@ -1,5 +1,6 @@
 package com.csinfotechbd.rms.setting.country;
 
+import com.csinfotechbd.base.BaseProperty;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.NotEmpty;
@@ -8,7 +9,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "rms_setting_country")
-public class CountryEntity {
+public class CountryEntity extends BaseProperty{
     @Getter
     @Setter
     @Id
@@ -22,14 +23,24 @@ public class CountryEntity {
 
     @Getter
     @Setter
-    @Column(unique = true)
-    private String cunUniCode;
+    private String description;
+
+    @Getter
+    @Setter
+    private String cuntCode;
+
+    @Getter
+    @Setter
+    @Column(nullable = false)
+    private int maxZone=1;
 
     public CountryEntity(){}
 
-    public CountryEntity(long countryId, String cunUnicode, String code) {
+    public CountryEntity(long countryId,String title,String description, String cuntCode, int maxZone) {
         this.countryId = countryId;
+        this.maxZone = maxZone;
         this.title = title;
-        this.cunUniCode = cunUnicode;
+        this.description = description;
+        this.cuntCode = cuntCode;
     }
 }

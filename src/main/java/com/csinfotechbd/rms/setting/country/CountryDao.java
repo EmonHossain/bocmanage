@@ -13,9 +13,9 @@ public class CountryDao {
     public List<CountryEntity> getList() {
         List<CountryEntity> countryList = new ArrayList<CountryEntity>();
 
-        countryList.add(new CountryEntity(1,"Bangladesh", "001"));
-        countryList.add(new CountryEntity(2,"America", "002"));
-        countryList.add(new CountryEntity(3,"Canada", "003"));
+//        countryList.add(new CountryEntity(1,"Bangladesh", "001"));
+//        countryList.add(new CountryEntity(2,"America", "002"));
+//        countryList.add(new CountryEntity(3,"Canada", "003"));
 
          return countryList;
     }

@@ -21,6 +21,15 @@ public class ShelfBoxEntity {
     @Column(nullable = false)
     private String title;
 
+    @Getter
+    @Setter
+    private String description;
+
+    @Getter
+    @Setter
+    @Column(nullable = false)
+    private int maxRecord=1;
+
 
     @Getter
     @Setter

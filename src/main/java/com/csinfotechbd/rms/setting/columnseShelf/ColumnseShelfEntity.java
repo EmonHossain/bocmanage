@@ -18,6 +18,16 @@ public class ColumnseShelfEntity {
     @Setter
     @Column(nullable = false)
     private String title;
+
+    @Getter
+    @Setter
+    private String description;
+
+    @Getter
+    @Setter
+    @Column(nullable = false)
+    private int maxBox=1;
+
     @Getter
     @Setter
     @Column(unique = true)

@@ -18,6 +18,16 @@ public class RowsColumnEntity {
     @Setter
     @Column(nullable = false)
     private String title;
+
+    @Getter
+    @Setter
+    private String description;
+
+    @Getter
+    @Setter
+    @Column(nullable = false)
+    private int maxShelf=1;
+
     @Getter
     @Setter
     @Column(unique = true)

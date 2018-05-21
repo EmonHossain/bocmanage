@@ -19,6 +19,16 @@ public class CentereasRowEntity extends BaseProperty{
     @Setter
     @Column(nullable = false)
     private String title;
+
+    @Getter
+    @Setter
+    private String description;
+
+    @Getter
+    @Setter
+    @Column(nullable = false)
+    private int maxClm=1;
+
     @Getter
     @Setter
     @Column(unique = true)

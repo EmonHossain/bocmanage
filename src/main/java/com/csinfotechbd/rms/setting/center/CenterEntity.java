@@ -19,6 +19,16 @@ public class CenterEntity {
     @Setter
     @Column(nullable = false)
     private String title;
+
+    @Getter
+    @Setter
+    private String description;
+
+    @Getter
+    @Setter
+    @Column(nullable = false)
+    private int maxRow=1;
+
     @Getter
     @Setter
     @Column(unique = true)
